@@ -7,10 +7,10 @@ mysql = MySQL()
 
 class Database:
     def __init__(self):
-        app.config['MYSQL_DATABASE_USER'] = 'recommendation'
-        app.config['MYSQL_DATABASE_PASSWORD'] = '01005500593Mm'
-        app.config['MYSQL_DATABASE_DB'] = 'recommendation$recommendation'
-        app.config['MYSQL_DATABASE_HOST'] = 'recommendation.mysql.pythonanywhere-services.com'
+        app.config['MYSQL_DATABASE_USER'] = 'USERNAME'
+        app.config['MYSQL_DATABASE_PASSWORD'] = 'DB PASSWORD'
+        app.config['MYSQL_DATABASE_DB'] = 'username$DB_NAME'
+        app.config['MYSQL_DATABASE_HOST'] = 'HOST URL'
         mysql.init_app(app)
         self.conn = mysql.connect()
         self.cursor = self.conn.cursor()
